@@ -34,14 +34,16 @@ export default function PartialImageGallery({ images, lengthToShow }: Props) {
         }
       })}
 
-      {/*
+      {
+        /*
         <button
             {...usePartialSection({ Props: { lengthToShow: lengthToShow + 1 } })}
         >
-        
+
         Ver mais
       </button>
-      */}
+      */
+      }
     </aside>
   );
 }
