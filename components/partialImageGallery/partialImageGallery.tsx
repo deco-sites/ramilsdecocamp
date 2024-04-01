@@ -22,8 +22,12 @@ export default function PartialImageGallery(props: Props) {
         }
       })}
       <button
-          {...usePartialSection({props: {lengthToShow: props.lengthToShow + 1 }})}
-      >Clique!</button>
+        {...usePartialSection({
+          props: { lengthToShow: props.lengthToShow + 1 },
+        })}
+      >
+        Clique!
+      </button>
     </aside>
   );
 }
