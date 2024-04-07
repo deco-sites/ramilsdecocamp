@@ -1,5 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import ProductVotedProductCard from "../../islands/ProductVoted/ProductVotedProductCard.tsx";
 
 export interface Props {
   image: ImageWidget;
@@ -23,6 +24,8 @@ export default function HorizontalProductCard(
 
         <h5>{price}</h5>
       </div>
+
+      <ProductVotedProductCard />
 
       <button type="button">{"Adicionar ao Carrinho"}</button>
     </div>
