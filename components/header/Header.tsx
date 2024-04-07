@@ -8,6 +8,7 @@ import type { SectionProps } from "deco/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
+import AllVotesHeader from "../../islands/ProductVoted/AllVotesHeader.tsx";
 
 export interface Logo {
   src: ImageWidget;
@@ -90,6 +91,7 @@ function Header({
           platform={platform}
         >
           <div class="bg-base-100 fixed w-full z-50">
+            <AllVotesHeader />
             {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
             <Navbar
               device={device}
